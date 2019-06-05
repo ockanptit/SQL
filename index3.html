@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        Mệnh đề WHERE
+        Được dùng để lọc kết quả từ câu truy vấn
+        Cú pháp:
+        SELECT teen_trường_1, tên_trường_2...
+        FROM tên_bảng
+        WHERE điều_kiện
+
+        Ví dụ: Lấy ra các bản ghi có id = 5
+        SELECT * FROM customers WHERE id=5
+
+        Ví dụ 2: Lấy ra tất cả các khách hàng đến từ Chitago
+        SELECT * FROM customers WHERE city = 'Chicago'
+
+        Lưu ý: Nếu điều kiện là số (id) thì không cần trong ''
+        nhưng chuỗi thì cần bao trong '' hoặc ""
+
+        Ví dụ 3: Lấy ra tất cả các khách hàng có id lớn hơn 5
+        SELECT * FROM customers WHERE id > 5
+
+        Ví dụ 4: Lọc theo nhiều điều kiện ( AND - OR )
+        AND ( đáp ứng tất cả các điều kiện )
+        OR ( chỉ đáp ứng 1 trong các điều kiện )
+        Mệnh đề OR
+        SELECT * FROM customers WHERE city = 'Chicago' OR city = 'Los Angelas'
+        Mệnh đề AND
+        Lấy ra tất cả các khách hàng có nghề nghiệp là Purchasing Manager đến từ Chicago
+        SELECT id, job_title , last_name , first_name , city FROM customers WHERE job_title = 'Purchasing Manager' AND city = 'Chicago'
+
+        Ví dụ 5: Lấy ra tất cả khách hàng không đến từ Chicago ( WHERE NOT )
+        SELECT * FROM customers WHERE NOT city = 'Chicago'
+    </pre>
+</body>
+</html>

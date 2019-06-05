@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <pre>
+        ORDER BY ( Sắp xếp)
+        ASC ( Tăng dần )
+        DESC ( Giảm dần )
+        Cú pháp:
+        SELECT cột_1, cột_2...
+        FROM Tên_bảng
+        ORDER BY côt_1, cột_2... ASC/DESC
+
+        Ví dụ 1:
+        lấy ra tất cả các khách hàng trong bảng customers
+        theo thứ tự id tăng dần .
+        SELECT * FROM customers ORDER BY id ASC
+
+        Ví dụ 2 :
+        lấy ra tất cả các khách hàng trong bảng customers
+        theo thứ tự id giảm dần .
+        SELECT * FROM customers ORDER BY id DESC
+
+
+        Ví dụ 3 :
+        lấy ra các khách hàng sắp xếp theo tên tăng dần A - Z
+        SELECT * FROM customers ORDER BY first_name ASC
+
+         Ví dụ 4 :
+        lấy ra các khách hàng sắp xếp theo tên giảm dần A - Z
+        SELECT * FROM customers ORDER BY first_name DESC
+
+        Ví dụ 5:
+        Sắp xếp nhiều cột 1 lúc
+        lấy ra các khách hàng sắp xếp theo nghề nghiệp tăng dần A - Z
+        và city giảm dần Z - A
+        SELECT id,first_name,job_title,city FROM customers ORDER BY job_title ASC, city DESC
+
+        Ví dụ 6:
+        Sắp xếp nhiều cột 1 lúc
+        lấy ra các khách hàng sắp xếp theo nghề nghiệp tăng dần A - Z
+        và city tăng dần A - Z
+
+    </pre>
+
+</body>
+</html>
